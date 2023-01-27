@@ -1,5 +1,6 @@
 
-===================================================
+you need to run this commands first in order to enable xp_cmdshell
+==================================================================
 
 -- To allow advanced options to be changed.
 EXEC sp_configure 'show advanced options', 1
@@ -75,7 +76,9 @@ LogicalName NVARCHAR(128),
  DELETE FROM @fileListTable;
   END
   
-==============================================
+  
+  close xp_cmdshell again (security wise)
+=========================================
   
 -- To allow xp_cmdshell to be changed.
 EXEC sp_configure 'xp_cmdshell', 0
