@@ -1,3 +1,7 @@
 # RestoreDatabasesScript
 
-the purpose of this script is to restore multiple databases in 1 step, this generates TSQL command for each backup file with reallocate (data,log) option
+input : databases backup location 
+
+option : reallocate files (data,log)
+
+output : TSQL command for each database 
